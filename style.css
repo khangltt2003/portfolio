@@ -349,6 +349,7 @@
 
 @media(max-width:649px){
     #contact .container{
+        align-items: flex-start;
         text-align: left;
     }
 }
