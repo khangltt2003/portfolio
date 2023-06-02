@@ -1,11 +1,11 @@
 var menu = document.querySelector(".menu-logo");
-var list = document.querySelector(".nav-bar ul");
+var dropDownMenu = document.querySelector(".dropdown-menu");
 
 menu.addEventListener("click", ()=>{
-    if(list.style.display === "block"){
-        list.style.display = "none";
+    if(dropDownMenu.style.display === "none"){
+        dropDownMenu.style.display = "flex";
     }
     else{
-        list.style.display = "block";
+        dropDownMenu.style.display = "none";
     }
 })
