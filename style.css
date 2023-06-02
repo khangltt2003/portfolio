@@ -96,9 +96,6 @@
     align-items: center;
 }
 
-.dropdown-menu.open {
-    height: 240px;
-}
 
 .dropdown-menu li{
     padding: 20px 0;
@@ -128,7 +125,7 @@
         display: none;
     }
     .dropdown-menu{
-        display: block;
+        display: none;
     }
 }
 

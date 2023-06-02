@@ -9,3 +9,10 @@ menu.addEventListener("click", ()=>{
         dropDownMenu.style.display = "none";
     }
 })
+
+$(".dropdown-menu li").click(()=>{
+    console.log($(".dropdown-menu li"));
+    setTimeout(()=>{
+        dropDownMenu.style.display = "none";
+    }, 500)
+})
