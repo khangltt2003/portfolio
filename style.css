@@ -80,6 +80,39 @@
 
 .menu-logo{
     display: none;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.menu-logo:hover,
+.menu-logo:active,
+.menu-logo:focus{
+    background-color: rgb(0, 14, 18);
+
+}
+
+@media(max-width:650px){
+    .menu-logo{
+        display: block;
+        padding: 7px 10px;
+        font-size: 2.5rem;
+    }
+    .nav-bar ul{
+        background-color: var(--main-color);
+        position: absolute;
+        top: 60px;
+        right: 50px;
+        display: none;
+        flex-direction: column;
+        width: 33%;
+        align-items: center;
+
+    }
+    .nav-bar ul li{
+        width: 100%;
+        text-align: center;
+    }
+
 }
 
 #home{
@@ -91,7 +124,6 @@
     padding: 0 7%;
     color: var(--text-color);
 }
-
 
 .home-content{
     max-width: 600px;
@@ -151,13 +183,32 @@
 @media(max-width:1000px){
     #home{
         flex-direction: column;
-        justify-content: center;
-        padding-top: 70px;
+        align-items: center;
+        padding-top: 80px;
+    }
+    #home .image{
+        position: absolute;
+        bottom: 10%;
+        right: 33%;
+        width: 33%;
+    }
+}
+
+@media(max-width:800px){
+    #home .image{
+        width: 40%;
+    }
+}
+
+@media(max-width:550px){
+    #home{
+        padding-top: 40%;
     }
     #home .image{
         display: none;
     }
 }
+
 
 .container{
     border-top: 5px solid var(--main-color);
@@ -186,6 +237,13 @@
     justify-content: space-between;
     padding: 10px 20px;
     font-size: var(--normal-font-size);
+}
+
+@media(max-width:950px){
+    #about .container div div{
+        flex-direction: column;
+        align-items: flex-end;
+    }
 }
 
 #projects{
