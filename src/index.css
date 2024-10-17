@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Electrolize", sans-serif;
+}
+
+.gradient-background {
+  background: linear-gradient(300deg, #012937, #094e6a, #012937);
+  background-size: 300% 300%; /* Increased size for more dramatic movement */
+  animation: gradient-animation 5s ease infinite; /* Faster animation */
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 200% 50%; /* Increased movement distance */
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
