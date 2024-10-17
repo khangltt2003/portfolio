@@ -114,7 +114,7 @@ const projects = [
 ];
 
 const Projects = () => (
-  <div className="w-full  gradient-background text-white p-8 ">
+  <div className="w-full gradient-background text-white p-8 ">
     <h2 className="text-[32px] font-bold mb-5">My Projects</h2>
     <div className="grid grid-cols-1 gap-6">
       {projects.map((project, i) => {

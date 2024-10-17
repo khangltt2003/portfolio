@@ -35,7 +35,7 @@ const Project = ({ project }) => {
         </div>
       </div>
       <div className="w-full md:w-[50%] ">
-        <div className="border-2 border-second h-[350px] rounded-[14px] overflow-hidden mb-5">
+        <div className="border-2 border-second h-[250px] sm:h-[300px] md:h-[350px] rounded-[14px] overflow-hidden mb-5">
           <img className="w-full h-full" src={project.demo[img]} alt="" />
         </div>
         <a href={project.link} className="text-second  text-[20px] flex items-center hover:text-main">
