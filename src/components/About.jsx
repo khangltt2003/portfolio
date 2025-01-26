@@ -22,17 +22,17 @@ const About = () => (
       <div className="absolute bottom-0 left-0 ">
         <ul className=" flex flex-row gap-7 text-[32px]">
           <li className="hover:text-[#0b94cf] transition-all duration-100">
-            <a href="https://www.facebook.com/profile.php?id=100057535205411">
+            <a href="https://www.facebook.com/profile.php?id=100057535205411" target="_blank">
               <i className="bx bxl-facebook-circle"></i>
             </a>
           </li>
           <li className="hover:text-[#0b94cf] transition-all duration-100">
-            <a href="https://github.com/khangltt2003">
+            <a href="https://github.com/khangltt2003" target="_blank">
               <i className="bx bxl-github"></i>
             </a>
           </li>
           <li className="hover:text-[#0b94cf] transition-all duration-100">
-            <a href="https://www.linkedin.com/in/thien-le-a2a31126a/">
+            <a href="https://www.linkedin.com/in/dylan-le-a2a31126a/" target="_blank">
               <i className="bx bxl-linkedin"></i>
             </a>
           </li>

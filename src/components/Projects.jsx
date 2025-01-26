@@ -20,6 +20,36 @@ import project4_6 from "../assets/project4_6.png";
 import project4_7 from "../assets/project4_7.png";
 import project4_8 from "../assets/project4_8.png";
 import project4_9 from "../assets/project4_9.png";
+import project5_1 from "../assets/project5_1.png";
+import project5_2 from "../assets/project5_2.png";
+import project5_3 from "../assets/project5_3.png";
+import project5_4 from "../assets/project5_4.png";
+import project5_5 from "../assets/project5_5.png";
+import project5_6 from "../assets/project5_6.png";
+import project5_7 from "../assets/project5_7.png";
+import project5_8 from "../assets/project5_8.png";
+import project5_9 from "../assets/project5_9.png";
+import project6_1 from "../assets/project6_1.png";
+import project6_2 from "../assets/project6_2.png";
+import project6_3 from "../assets/project6_3.png";
+import project6_4 from "../assets/project6_4.png";
+import project6_5 from "../assets/project6_5.png";
+import project6_6 from "../assets/project6_6.png";
+import project6_7 from "../assets/project6_7.png";
+import project6_8 from "../assets/project6_8.png";
+import project6_9 from "../assets/project6_9.png";
+import project6_10 from "../assets/project6_10.png";
+import project7_1a from "../assets/project7_1.webp";
+import project7_1 from "../assets/project7_1.png";
+import project7_2 from "../assets/project7_2.png";
+import project7_3 from "../assets/project7_3.png";
+import project7_4 from "../assets/project7_4.png";
+import project7_5 from "../assets/project7_5.png";
+import project7_6 from "../assets/project7_6.png";
+import project7_7 from "../assets/project7_7.png";
+
+import ProjectTab from "./ProjectTab";
+import { useState } from "react";
 const projects = [
   {
     name: "Library Management",
@@ -33,7 +63,7 @@ const projects = [
     tools: ["https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"],
   },
   {
-    name: "30 days with HTML CSS JavaScript",
+    name: "30 days with HTML CSS JS",
     description: `This is my 30-day coding challenge where I build a variety of web designs and interactive components using just 
                   plain HTML, CSS, and JavaScript! Throughout this journey, I'll be creating everything from basic layouts to complex UI elements,
                   without relying on frameworks or libraries, to showcase the power of vanilla web development.`,
@@ -85,7 +115,7 @@ const projects = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Amazon-S3-Logo.svg/642px-Amazon-S3-Logo.svg.png?20220427001138",
     ],
   },
   {
@@ -98,7 +128,7 @@ const projects = [
                 styled with TailwindCSS, provided a smooth user 
                 experience for both administrators and volunteers. We followed Agile methodology, ensuring continuous collaboration and 
                 iterative development to meet the project’s goals efficiently.`,
-    link: "https://github.com/khangltt2003/COSC4353-volunteer",
+    link: "https://github.com/khangltt2003/django-react-medical-volunteer-hub",
     demo: [project4_1, project4_2, project4_3, project4_4, project4_5, project4_6, project4_7, project4_8, project4_9],
     tools: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
@@ -108,20 +138,98 @@ const projects = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
 
       "https://static-00.iconduck.com/assets.00/postgresql-icon-1987x2048-v2fkmdaw.png",
-      "https://pbs.twimg.com/profile_images/1683811046580953089/a8HfGsr5_400x400.png",
+      "https://icon.icepanel.io/AWS/svg/Database/RDS.svg",
+    ],
+  },
+  {
+    name: "DataGPT and ASCII Generator",
+    description: `This project involved creating an innovative data analysis and visualization platform. The website, built using Streamlit, allowed users to upload datasets, ask questions, generate plots, and explore detailed analytics through a conversational interface. 
+                OpenAI’s GPT-4o-mini model was integrated with LangChain's PandasDataFrameAgent to facilitate advanced data analysis and code generation. 
+                PygWalker was utilized to provide a drag-and-drop interface, enabling users to create plots and interact with data visualizations seamlessly. 
+                Additionally, the project featured an ASCII art generator built with OpenCV and Pillow, allowing users to convert images and GIFs into ASCII art with support for both black-and-white and color formats.`,
+    link: "https://github.com/khangltt2003/openai-streamlit-data-analysis-gpt",
+    demo: [project6_1, project6_2, project6_3, project6_4, project6_5, project6_6, project6_7, project6_8, project6_9, project6_10],
+
+    tools: [
+      "https://www.svgrepo.com/show/306500/openai.svg",
+      "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*MVJZLfszGGNiJ-UFK4U31A.png",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opencv/opencv-original.svg",
+    ],
+  },
+  {
+    name: "Amazon Review Search Engine",
+    description: `I developed a search engine capable of retrieving relevant reviews from a dataset of over 200,000 Amazon product reviews based on user input. 
+                I designed and evaluated the effectiveness of various NLP techniques, including Boolean Search, Topic Modeling, Word Embeddings (Word2Vec), and transformer-based models (BERT), to enhance the accuracy and relevance of extracted reviews. 
+                By combining Word Embedding techniques with a Rating Filtering method, I achieved up to 80% relevance in review extraction.`,
+    link: "https://github.com/khangltt2003/nlp-amazon-review-search-engine",
+    demo: [project7_1a],
+    tools: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+      "https://miro.medium.com/v2/resize:fit:592/1*YM2HXc7f4v02pZBEO8h-qw.png",
+      "https://rare-technologies.com/wp-content/uploads/2016/02/rare_image_only.png",
+    ],
+  },
+  {
+    name: "Real-time Message Application",
+    description: `I built a robust real-time messaging application inspired by Discord, leveraging Next.js, Socket.IO, and LiveKit to provide seamless messaging, voice chat, and video calling with low latency. 
+                The application features role-based access control, empowering users to assign roles, configure permissions, and ensure secure communication across public channels and private one-on-one conversations. 
+                This project prioritizes scalability and performance, delivering an intuitive and efficient user experience.`,
+    link: "https://github.com/khangltt2003/nextjs-real-time-message-app",
+    demo: [project5_1, project5_2, project5_3, project5_4, project5_5, project5_6, project5_7, project5_8, project5_9],
+    tools: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg",
+    ],
+  },
+  {
+    name: "Hotel Booking Application",
+    description: `I developed a full-stack hotel booking application, utilizing Spring Boot for the backend and React.js for the frontend. 
+                The application includes robust authentication and authorization mechanisms implemented with JWT and Spring Security to ensure secure user access. 
+                AWS RDS and AWS S3 were integrated for efficient database hosting and image storage, managing data for over 200 entities, including users, bookings, and rooms.`,
+    link: "https://github.com/khangltt2003/spring-boot-react-booking-application",
+    demo: [project7_1, project7_7, project7_5, project7_6, project7_4, project7_2, project7_3],
+
+    tools: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Amazon-S3-Logo.svg/642px-Amazon-S3-Logo.svg.png?20220427001138",
+      "https://icon.icepanel.io/AWS/svg/Database/RDS.svg",
     ],
   },
 ];
 
-const Projects = () => (
-  <div className="w-full gradient-background text-white p-8 ">
-    <h2 className="text-[32px] font-bold mb-5">My Projects</h2>
-    <div className="grid grid-cols-1 gap-6">
-      {projects.map((project, i) => {
-        return <Project key={i} project={{ ...project, i }} />;
-      })}
+const Projects = () => {
+  const [projectI, setProjectI] = useState(null);
+
+  const handleOnClick = (i) => {
+    setProjectI(i);
+  };
+
+  const handleClose = () => {
+    setProjectI(null);
+  };
+
+  return (
+    <div className="h-full w-full">
+      {projectI !== null && <Project project={projects[projectI]} onClose={handleClose} />}
+      <div className="w-full  gradient-background text-white p-8 flex flex-col items-center ">
+        <h2 className="text-[32px] font-bold mb-5">My Projects</h2>
+        <div className="lg:w-[1180px] grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-3 gap-16 md:gap-12 lg:gap-12">
+          {projects.map((project, i) => {
+            return <ProjectTab key={i} project={{ ...project, i }} handleOnClick={handleOnClick} />;
+          })}
+        </div>
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default Projects;
