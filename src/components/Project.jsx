@@ -1,10 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { FaTimes } from "react-icons/fa";
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
 
 const Project = ({ project, onClose }) => {
-  const markdown = project.markdown;
   const [img, setImg] = useState(0);
   const intervalIdRef = useRef(null);
   useEffect(() => {
